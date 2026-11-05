@@ -15,8 +15,8 @@ I am a cellist and a music engineering student. I want to build AI systems that 
 | Dataset | Instruments used | Used for |
 |---|---|---|
 | [Philharmonia Orchestra samples](https://philharmonia.co.uk/audio-sound-samples/) | violin, viola, cello, double bass | training |
-| [OrchideaSOL](https://forum.ircam.fr/projects/detail/orchideasol/) (IRCAM) | violin, viola, double bass | training (v3 only) |
-| OrchideaSOL | **cello** | **final test only** — never used for training |
+| [OrchideaSOL](https://forum.ircam.fr/projects/detail/orchideasol/) (IRCAM) | violin, viola, double bass | training (v3 and v4) |
+| OrchideaSOL | **cello** | **final test for v1–v3** — never used for training in v1–v3 (used for training only in v4, see below) |
 
 The audio files are **not** included in this repository because of the data licenses. You can download them from the links above.
 
@@ -29,7 +29,7 @@ The audio files are **not** included in this repository because of the data lice
 
 ## Experiments and results
 
-The final test uses **cello** recordings from OrchideaSOL. The model never heard these recordings during training.
+For v1–v3, the final test uses **cello** recordings from OrchideaSOL. The model never heard these recordings during training.
 
 | Version | What changed | Arco | Pizz (l.v.) | Pizz (secco)* | Tremolo |
 |---|---|---|---|---|---|
